@@ -10,7 +10,7 @@ public class TeacherCache {
         return teacherInMemCache;
     }
 
-    public static boolean addDataInStudentCache(String key, Teacher value){
+    public static boolean addDataInTeacherCache(String key, Teacher value){
         try{
             if(Objects.nonNull(teacherInMemCache)){
                 teacherInMemCache.put(key,value);
