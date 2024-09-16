@@ -9,7 +9,7 @@ public class StudentCache {
     *       1. Eager initialization     ( -- teacherInMemCache(another class) -- is an example)
     *       2. Lazy initialization ( -- getStudentCache() -- method is an example)
     * */
-    public static volatile HashMap<String,Student> studentInMemCache = new HashMap<>();
+    public static volatile HashMap<String,Student> studentInMemCache = null;
 
     public static HashMap<String,Student> getStudentCache(){
         if(Objects.isNull(studentInMemCache)){
